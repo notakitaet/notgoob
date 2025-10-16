@@ -5,41 +5,104 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NotGoob</title>
     <style>
-        body {
-            font-family: Inter, Montserrat;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        header {
-            background-color: #180487;
-            color: #fff;
-            padding: 1rem;
-            text-align: center;
-        }
+    /* Reset and Base Styles */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        background-color: #f9f9f9;
+        color: #333;
+    }
+
+    /* Header and Navigation */
+    header {
+        background: linear-gradient(135deg, #6e48aa 0%, #9d50bb 100%);
+        color: #fff;
+        padding: 1.5rem 0;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .container {
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        margin-top: 1rem;
+    }
+
+    nav a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: 600;
+        transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+        color: #ffd700;
+    }
+
+    /* Hero Section */
+    .hero {
+        text-align: center;
+        padding: 4rem 0;
+        background-color: #fff;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        color: #333;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+        color: #666;
+    }
+
+    /* Main Content */
+    main {
+        padding: 2rem 0;
+    }
+
+    .content-section {
+        background-color: #fff;
+        margin-bottom: 2rem;
+        padding: 2rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Footer */
+    footer {
+        background: linear-gradient(135deg, #6e48aa 0%, #9d50bb 100%);
+        color: #fff;
+        text-align: center;
+        padding: 1.5rem 0;
+        margin-top: 2rem;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
         nav {
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
+            flex-direction: column;
+            gap: 0.5rem;
         }
-        nav a {
-            color: #fff;
-            text-decoration: none;
+
+        .hero h1 {
+            font-size: 2rem;
         }
-        main {
-            padding: 2rem;
-            text-align: center;
-        }
-        footer {
-            background-color: #180487;
-            color: #fff;
-            text-align: center;
-            padding: 1rem;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
+    }
+            
     </style>
 </head>
 <body>
